@@ -1,0 +1,4 @@
+#!/bin/bash
+
+cat ~/.ssh/conf.d/* > ~/.ssh/config
+chmod 0600 ~/.ssh/config
