@@ -17,4 +17,4 @@ iptables -I FORWARD -i $IFACE_VPN -o $IFACE_OUT \
 iptables -I FORWARD -m conntrack --ctstate RELATED,ESTABLISHED \
      -j ACCEPT
 
-iptables -t nat -I POSTROUTING -o IFACE_OUT -s $VPN_CIDR  -j MASQUERADE
+iptables -t nat -I POSTROUTING -o $IFACE_OUT -s $VPN_CIDR  -j MASQUERADE
