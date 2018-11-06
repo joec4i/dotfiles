@@ -53,3 +53,7 @@
   status = true
 [status]
   submoduleSummary = true
+[url "git@github.com:bigcommerce/"]
+	insteadOf = https://github.com/bigcommerce/
+[url "git@github.com:bigcommerce-labs/"]
+	insteadOf = https://github.com/bigcommerce-labs/
