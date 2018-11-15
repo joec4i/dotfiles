@@ -1,3 +1,5 @@
+[include]
+  path = ~/.gitconfig.local
 [user]
   name = Joe Cai
 [pull]
@@ -27,7 +29,6 @@
   who = shortlog -s --
   cp = cherry-pick
   lc = log ORIG_HEAD.. --stat --no-merges
-  graphviz = "!f() { echo 'digraph git {' ; git log --pretty='format:  %h -> { %p }' \"$@\" | sed 's/[0-9a-f][0-9a-f]*/\"&\"/g' ; echo '}'; }; f"
 [log]
   date=local
 [core]
@@ -36,8 +37,7 @@
   filemode = false
   excludesfile = ~/.gitignore_global
   whitespace = space-before-tab,indent-with-non-tab,trailing-space
-[http]
-  sslVerify = false
+  editor = vim
 [credential]
   helper = store
 [merge]
