@@ -11,4 +11,5 @@ config config --local user.email "joey.cai@gmail.com"
 echo "/*" > ~/.cfg/info/sparse-checkout
 echo '!'"README.md" >> ~/.cfg/info/sparse-checkout
 config checkout
+./bin/boostrap/bootstrap.sh
 ```
