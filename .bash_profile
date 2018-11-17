@@ -2,7 +2,7 @@ alias ls="ls -G"
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 export GOPATH=$HOME/go
-export PATH=${GOPATH//://bin:}/bin:$HOME/bin:/usr/local/opt/mysql-client/bin:$PATH
+export PATH=${GOPATH//://bin:}/bin:$HOME/bin:/usr/local/opt/mysql-client/bin:$(python3 -m site --user-base)/bin:$PATH
 
 source /usr/local/etc/bash_completion.d/git-completion.bash
 
