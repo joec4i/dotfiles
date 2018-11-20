@@ -12,3 +12,5 @@ brew update
 echo "> brew bundle"
 
 brew bundle --file=$CWD/Brewfile
+
+source $CWD/install_vim_plugins.sh

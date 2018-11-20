@@ -1,6 +1,21 @@
-" ===================================
-" Configuration
-" ===================================
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'mattn/emmet-vim'
+
+call vundle#end()            " required
+
+" NerdTree Configuration
+let NERDTreeShowHidden=1
+
+filetype plugin indent on    " required
 
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
@@ -8,7 +23,6 @@ set cursorline
 set encoding=utf-8
 set clipboard=unnamed
 
-set nocompatible
 set laststatus=2               " Always show the statusline
 set nobackup                   " delete backup
 set noswapfile
@@ -40,5 +54,3 @@ syntax on
 au FileType make setlocal noexpandtab
 au FileType yaml setl sw=2 sts=2 et
 au FileType ruby setl sw=2 sts=2 et
-
-
