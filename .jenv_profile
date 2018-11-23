@@ -1,0 +1,5 @@
+#!/bin/bash
+# This is not referenced in .bash_profile because I don't want the overhead. 
+# Run `source ~/.jenv_profile` when it's needed
+export PATH="$HOME/.jenv/bin:$PATH
+eval "$(jenv init -)"
