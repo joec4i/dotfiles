@@ -15,3 +15,9 @@ export EMAIL=joey.cai@gmail.com
 if [ -f ~/.bash_profile_local ]; then
     source ~/.bash_profile_local
 fi
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+if [ -f $HOME/.cargo/env ]; then 
+    source $HOME/.cargo/env
+fi
